@@ -11,6 +11,11 @@ h3 {
     font-size: 22px;
 }
 
+ul {
+    list-style: none;
+    left: 0%;
+}
+
 .sub-title {
     font-size: 2em;
 }
