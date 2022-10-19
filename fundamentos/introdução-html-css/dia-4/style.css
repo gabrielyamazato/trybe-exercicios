@@ -1,3 +1,20 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+.sub-title {
+    font-size: 2em;
+}
+
 .links {
     background-color: aqua;
     display: inline-block;
