@@ -1,5 +1,5 @@
 const myName = "Gabriel";
 const birthCity = "Extremoz";
-let birthYear = 2030;
+let birthYear = 1995;
 
 console.log(birthYear)
