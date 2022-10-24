@@ -21,3 +21,30 @@ for (i=word.length-1; i>=0; i--) {
 }
 
 console.log(newWord)
+
+//Utilize a estrutura de repetição for para escrever dois algoritmos:
+//um que retorne a maior palavra desse array e outro que retorne a menor.
+//Considere o número de caracteres de cada palavra.
+
+let array = ['java', 'javascript', 'python', 'html', 'css'];
+let palavraMaior = 0;
+
+for (let i=0; i< array.length; i++) {
+    if (array[i].length > palavraMaior){
+        palavraMaior = array[i].length;
+    }
+}
+console.log(palavraMaior)
+
+//Um número primo é um número inteiro maior do que 1 que possui somente dois divisores,
+//ou seja, é divisível por 1 e por ele mesmo.
+//Sabendo disso, escreva um algoritmo que retorne o maior número primo entre 2 e 50.
+
+let nu = 0;
+
+for (i=2; i<=50; i++) {
+    if (i%1===i && i%i===0) {
+        nu+=1
+    }
+}
+console.log(nu)
