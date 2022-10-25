@@ -27,11 +27,11 @@ console.log(newWord)
 //Considere o número de caracteres de cada palavra.
 
 let array = ['java', 'javascript', 'python', 'html', 'css'];
-let palavraMaior = 0;
+let palavraMaior = "";
 
 for (let i=0; i< array.length; i++) {
-    if (array[i].length > palavraMaior){
-        palavraMaior = array[i].length;
+    if (array[i].length > palavraMaior.length){
+        palavraMaior = array[i];
     }
 }
 console.log(palavraMaior)
