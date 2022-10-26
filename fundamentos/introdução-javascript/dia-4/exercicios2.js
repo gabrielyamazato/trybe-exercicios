@@ -1,19 +1,25 @@
 // 1
 
-// function verificaPalindrome(ver){
-//     let palavra = ver.toLowerCase().replace('');
-//     let palavraReverso = palavra.split('').reverse().join('');
+function verificaPalindrome(ver){
+    let palavra = ver.toLowerCase();
+    let palavraReverso = palavra.split('').reverse().join('');
 
-//     return palavraReverso === palavra;
+    return palavraReverso === palavra;
     
-// };
+};
 
-// verificaPalindrome('paralelepipedo')
+console.log(verificaPalindrome('arara'));
 
-let a = 5;
-let b = 2;
-console.log(a);
-a += b;
-console.log(a);
-b -= a;
-console.log(b);
+// 2
+
+function indiceDoMaior(index) {
+    let indiceMaior = 0;
+    for (let indice in index) {
+        if (index[indiceMaior] < index[indice]) {
+            indiceMaior = indice
+        }
+    }
+    return indiceMaior;
+}
+
+console.log(indiceDoMaior([2, 3, 6, 7, 10, 1]));
