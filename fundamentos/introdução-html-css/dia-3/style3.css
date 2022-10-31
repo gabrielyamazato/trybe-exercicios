@@ -1,0 +1,15 @@
+h1, p, ol, li {
+    text-align: center;
+}
+
+li:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+li:active {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+li, ol {
+    list-style: none;
+}
