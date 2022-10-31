@@ -80,9 +80,18 @@
 
         const alteraTexto2 = () => {
             let novoTexto2 = document.getElementsByTagName('p')[0];
-            novoTexto2.innerText.toUpperCase() = '';
+            novoTexto2.innerText = novoTexto2.innerText.toUpperCase();
         }
         alteraTexto2();
+
+        const mostraConsole = () => {
+          let mostra = document.getElementsByTagName('p');
+          for (let i = 0; i < mostra.length; i += 1) {
+            const element = mostra[i];
+            console.log(element);
+          }
+        }
+        mostraConsole();
     </script>
   </body>
 </html>
