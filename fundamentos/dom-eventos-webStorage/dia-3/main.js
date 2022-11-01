@@ -10,13 +10,37 @@ const myWebpage = document.getElementById('my-spotrybefy');
 
 // - Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
 //  - Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
+firstLi.addEventListener('click', () => {
+    firstLi.classList.add('tech');
+    secondLi.classList.remove('tech');
+    thirdLi.classList.remove('tech');
+});
+secondLi.addEventListener('click', () => {
+    firstLi.classList.remove('tech');
+    secondLi.classList.add('tech');
+    thirdLi.classList.remove('tech');
+});
+thirdLi.addEventListener('click', () => {
+    firstLi.classList.remove('tech');
+    secondLi.classList.remove('tech');
+    thirdLi.classList.add('tech');
+});
 
 // - Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
 
+input.addEventListener('input', (event) => {
+    const techElement = document.querySelector('.tech');
+    techElement.innerText = event.target.value;
+  });
+
 // - Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 //  - Que tal redirecionar para seu portfólio?
+
+myWebpage.addEventListener('dblclick', () => {
+    window.location.replace('https://gabrielyamazato.github.io/');
+  });
 
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
