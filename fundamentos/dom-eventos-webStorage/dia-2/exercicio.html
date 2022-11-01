@@ -61,9 +61,35 @@
     //   Adicione a tag h1 com o texto Exercício - JavaScript DOM como filho da tag body;
     const adicionaH1 = () => {
         let add = document.getElementsByTagName('body')[0];
-        addCria = document.createElement('h1');
+        let addCria = document.createElement('h1');
+        let text1 = document.createTextNode('Exercício - JavaScript DOM');
+
+        addCria.appendChild(text1);
+        add.appendChild(addCria);
     }
     adicionaH1();
+
+    // Adicione a tag main com a classe main-content como filho da tag body
+
+    const adicionaMain = () => {
+      let add2 = document.getElementsByTagName('body')[0];
+      let addClass = document.createElement('main');
+      addClass.className = "main-content";
+
+      add2.appendChild(addClass);
+    }
+    adicionaMain();
+
+    // Adicione a tag section com a classe center-content como filho da tag main criada no passo 2
+
+    const adicionaSection = () => {
+      let add3 = document.getElementsByClassName('main-content');
+      let addClass2 = document.createElement('section');
+      addClass2.className = "center-content"
+
+      add3.appendChild(addClass2);
+    }
+    adicionaSection();
     </script>
   </body>
 </html>
