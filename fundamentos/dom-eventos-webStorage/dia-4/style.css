@@ -1,0 +1,22 @@
+.botoes {
+    left: 2%;
+    top: 2%;
+    padding: 4px;
+    display: inline-block;
+}
+
+.subtitulo-header {
+    padding: 1%;
+    display: inline-block;
+}
+
+#title {
+    text-align: center;
+}
+
+#main {
+    text-align: center;
+    display: block;
+    padding-left: 5%;
+    padding-right: 5%;
+}
