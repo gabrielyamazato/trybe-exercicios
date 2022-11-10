@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">Formulário para participação no TrybeTrip</h1>
+    <form action="" method="get">
+        <div>
+            <label for="complete-name">Nome:</label>
+            <input id="complete-name" type="text" autocomplete="off" name="name" value="" minlength="10"
+                maxlength="40"><br>
+            <label for="email">Email:</label>
+            <input id="email" type="email" autocomplete="on" name="email" value="" minlength="10" maxlength="50" placeholder="exemplo@trybe.com">
+        </div>
+        <div>
+            <input id="destination1" type="radio" name="destination">
+            <label for="destination1">Cidade</label>
+            <input id="destination2" type="radio" name="destination">
+            <label for="destination2">Campo</label>
+            <input id="destination3" type="radio" name="destination">
+            <label for="destination3">Praia</label>
+            <input id="destination4" type="radio" name="destination">
+            <label for="destination4">Montanhas</label>
+        </div>
+        <div>
+            <label for="text-area">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label><br>
+            <textarea id="text-area" maxlength="500"></textarea>
+        </div>
+        <div>
+            <label for="date">Data da viagem</label>
+            <input type="date" id="date">
+        </div>
+        <div>
+            <input type="checkbox" id="checkbox-news" name="news-receiver">
+            <label for="checkbox-news">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label><br>
+            <input type="checkbox" id="checkbox-authorization" name="authorization" required>
+            <label for="checkbox-authorization">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+        </div>
+        <div>
+            <button type="submit" id="bt-send">Enviar</button> <button type="reset">Limpar</button>
+        </div>
+    </form>
+    <!-- <script>
+        const btSend = document.getElementById('bt-send');
+        
+        btSend.addEventListener('click', () => {
+            event.preventDefault()
+        })
+    </script> -->
+</body>
+
+</html>

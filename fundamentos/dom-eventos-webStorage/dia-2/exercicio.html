@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+    //   Adicione a tag h1 com o texto Exercício - JavaScript DOM como filho da tag body;
+    const adicionaH1 = () => {
+        let add = document.getElementsByTagName('body')[0];
+        let addCria = document.createElement('h1');
+        let text1 = document.createTextNode('Exercício - JavaScript DOM');
+
+        addCria.appendChild(text1);
+        add.appendChild(addCria);
+    }
+    adicionaH1();
+
+    // Adicione a tag main com a classe main-content como filho da tag body
+
+    const adicionaMain = () => {
+      let add2 = document.getElementsByTagName('body')[0];
+      let addClass = document.createElement('main');
+      addClass.className = "main-content";
+
+      add2.appendChild(addClass);
+    }
+    adicionaMain();
+
+    // Adicione a tag section com a classe center-content como filho da tag main criada no passo 2
+
+    const adicionaSection = () => {
+      let add3 = document.getElementsByClassName('main-content');
+      let addClass2 = document.createElement('section');
+      addClass2.className = "center-content"
+
+      add3.appendChild(addClass2);
+    }
+    adicionaSection();
+    </script>
+  </body>
+</html>
