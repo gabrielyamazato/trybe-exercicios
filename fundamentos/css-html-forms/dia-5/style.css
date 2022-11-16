@@ -65,3 +65,32 @@ body {
   .card:nth-of-type(3) {
     background-color: #41197f;
   }
+
+  #thirdDiv {
+    display: flex;
+  }
+
+  @media screen and (min-width: 500px) {
+    #firstDiv {
+        display: flex;
+    }    
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 1000px) {
+    #secondDiv {
+        display: flex;
+    }    
+  }
+
+  @media screen and (min-width: 650px) and (max-width: 950px) {
+    #thirdDiv {
+        display: none;
+    }    
+  }
+
+  @media screen and (max-width: 500px) {
+    p.trick {
+        display: flex;
+        color: black;
+    }    
+  }
