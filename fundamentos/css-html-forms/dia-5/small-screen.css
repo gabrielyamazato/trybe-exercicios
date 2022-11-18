@@ -51,3 +51,11 @@
         width: 48%;
     }
   }
+
+  @media screen and (min-width: 992px) {
+    body {
+        background-color: seashell;
+        max-width: 80%;
+        font-size: 1vw
+    }
+  }
