@@ -34,4 +34,4 @@ const mapString = (objectMap, string) => {
     return mapString(map, string);
   }
 
-  module.exports = mapString, encode, decode;
+  module.exports = {mapString, encode, decode};
