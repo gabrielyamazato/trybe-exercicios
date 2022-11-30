@@ -9,15 +9,13 @@ const newEmployees = () => {
 const holdArray = Object.values(newEmployees());
 
 function createEmail(nameComplete) {
-  let nameEmail = [];
-    nameComplete.forEach((fullName) => {
-      nameEmail.push({fullName, email: fullName.toLowerCase().replace(' ', '_') + `@trybe.com`});
-
-    })
+  let nameEmail = nameComplete.map((fullName) => {
+      return {fullName, email: fullName.toLowerCase().replace(' ', '_') + `@trybe.com`};
+  })
     return nameEmail
 }
 const novoEmployees = {};
-createEmail(holdArray).map((objeto, index) => {novoEmployees[`id${index + 1}`] = objeto});
+createEmail(holdArray).forEach((objeto, index) => {novoEmployees[`id${index + 1}`] = objeto});
 
 
 
