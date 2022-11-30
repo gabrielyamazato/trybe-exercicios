@@ -63,10 +63,8 @@ const books = [
   
   // Adicione o código do exercício aqui:
 
-  const nb = Object.values(books).map((book) => {
+  const livros = Object.values(books).map((book) => {
     return `${book.name} - ${book.genre} - ${book.author.name}`
   });
 
-  console.log(nb)
-
-  const ordem = (books) => {books.map(() => {})}
+  console.log(livros);
