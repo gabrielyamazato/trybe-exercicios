@@ -8,5 +8,5 @@ const newEmployees = (name) => {
   };
 
 function createEmail(nameComplete) {
-    nameComplete.forEach(newEmployees(nomeId))
+    nameComplete.forEach()
 }
