@@ -29,10 +29,6 @@ const people = [
   
   // escreva filterPeople abaixo
 
-const filterPeople = ({ name, bornIn, nationality }) => {
-    if (nationality === 'Australian' && bornIn <= 2000) {
-        return `Nome: ${name}, Data de Nascimento: ${bornIn}, Nacionalidade: ${nationality}`
-    }
-}
+const filterPeople = () => 
 
 console.log(filterPeople(people))
