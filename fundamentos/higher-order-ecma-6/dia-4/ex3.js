@@ -14,12 +14,18 @@ const alex = {
     nationality: 'Icelandic',
   };
   
-  const { name, age, likes } = alex;
+  // const { name, age, likes } = alex;
+  // const { name, age, likes } = gunnar;
 
   // complete a assinatura da função abaixo
-  const personLikes = (name, age , likes) => `${name} is ${age} years old and likes ${likes.join(', ')}.`;
+  // const personLikes = ({ name, age, likes }) => `${name} is ${age} years old and likes ${likes.join(', ')}.`;
   // <nome> tem <anos de idade> e gosta de <gostos da pessoa>
   
+  const personLikes = (person) => {
+    const { name, age, likes } = person;
+    return `${name} is ${age} years old and likes ${likes.join(', ')}.`;
+  };
+
   // Retornos esperados:
   console.log(personLikes(alex)); // 'Alex is 26 years old and likes fly fishing.'
   console.log(personLikes(gunnar)); // 'Gunnar is 30 years old and likes hiking, scuba diving, taking pictures.'
