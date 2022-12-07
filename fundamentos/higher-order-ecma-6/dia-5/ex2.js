@@ -13,4 +13,6 @@ const toObject = ([id, maker, year]) => ({ id, maker, year});
 
 //desestruturar o array nos parametros para ficar mais facil de passar para objeto.
 
-console.log(toObject(palio))
+console.log(toObject(palio));
+console.log(toObject(shelbyCobra));
+console.log(toObject(chiron));
