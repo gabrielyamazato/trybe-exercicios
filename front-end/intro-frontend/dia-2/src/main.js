@@ -1,5 +1,5 @@
 const token = '1938485206322039';
-const url = `https://superheroapi.com/api/${token}`;
+const url = `https://superheroapi.com/api.php/${token}`;
 
 const img = document.querySelector('#image');
 const nameHero = document.querySelector('#name');
